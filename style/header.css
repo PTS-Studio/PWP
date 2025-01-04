@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  list-style: none;
+}
+.center_block {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+/*___________________________________ШАПКА САЙТА______________________________________________*/
+.block-max-width {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 999;
+}
+.hd-block {
+  width: 1190px;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header_block {
+  width: 100%;
+  height: 80px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  backdrop-filter: blur(30px);
+  z-index: 999;
+}
+.null-block {
+  gap: 5px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/*_Логотип PTS__________________________*/
+.logotip-pts {
+  width: auto;
+  height: 30px;
+}
+.logotip-block {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+.logotip-block:hover {
+  box-shadow: 0 0 15px 5px rgba(31, 73, 125, 0.8);
+}
+
+/*_Неактивные ссылки____________________*/
+.sleep-btn {
+  color: #9996a8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.sleep-btn:hover {
+  background: #242028;
+}
+.sleep-btn:hover .icon-list {
+  transform: rotateX(180deg);
+}
+
+/*_Активная ссылка______________________*/
+.active-btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.active-btn:hover .icon-list {
+  transform: rotateX(180deg);
+}
+.active-btn:hover {
+  background: #242028;
+}
+.icon-list {
+  width: 12px;
+  height: auto;
+  transition: 0.5s;
+}
+.icon-services {
+  width: auto;
+  height: 30px;
+  margin: 10px 20px 10px 20px;
+  justify-content: center;
+  align-self: center;
+}
+
+/*_Всплывающая секция___________________*/
+.dropdown-section {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.dropdown-section-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#dr2-active {
+  margin-top: 21px;
+}
+#dr-sleep {
+  padding-top: 10px;
+}
+.dropdown-section:hover #dr-sleep {
+  display: block;
+}
+.dropdown-section:hover #dr2-active {
+  display: block;
+}
+
+/*_Меню для левого края_________________*/
+.sleep-menu-left {
+  display: none;
+  position: absolute;
+  width: 530px;
+  height: 100px;
+}
+.sleep-menu-left2 {
+  display: none;
+  position: absolute;
+  width: 330px;
+  height: 100px;
+}
+.active-menu-left {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #212121;
+  width: 100%;
+  border-radius: 20px;
+  animation: anim 0.3s forwards;
+  box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/*_Меню для правого края________________*/
+.sleep-menu-right {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 330px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.active-menu-right {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #212121;
+  width: 100%;
+  border-radius: 20px;
+  animation: anim 0.3s forwards;
+  box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+/* _Блок для секторов___________________*/
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+}
+.columns-container2 {
+  display: block;
+}
+/* _Сектора_____________________________*/
+.column1 {
+  width: 55%;
+  background: #252525;
+  border-radius: 20px;
+  gap: 10px;
+  padding: 20px;
+}
+.column2 {
+  width: 45%;
+  padding: 20px;
+}
+.column3 {
+  width: 100%;
+  padding: 20px;
+}
+
+/*_Верхний сектор_______________________ */
+.column-top {
+  background: #252525;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/*_Анимация появления меню______________*/
+@keyframes anim {
+  0% {transform: translateY(-5%);}
+  100% {transform: translateY(0);}
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*_Текст описания_______________________*/
+.dropdown-item-h1 {
+  width: 100%;
+  font-size: 16px;
+  color: #A0A1C5;
+  font-weight: 500;
+  line-height: 25px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+.dropdown-item {
+  width: 100%;
+  line-height: 25px;
+  color: #bdbcc4;
+  border-radius: 10px;
+  left: 0;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*_Размер блока ссылки__________________*/
+.services-block {
+  width: 100%;
+  display: flex;
+  height: 70px;
+}
+.services-block:hover {
+  background: #1a1a1a;
+  border-radius: 10px;
+  cursor: default;
+}
+.text-column3 {
+  width: 100%;
+  display: flex;
+  height: 35px;
+}
+
+/*____________________________МОБИЛЬНАЯ ШАПКА САЙТА___________________________________________*/
+.header_block_mobile {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  display: none;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
+  padding: 20px 50px;
+  z-index: 999;
+}
+
+/*_Размер блока ссылки для Телефонов____*/
+.services-block-mobile {
+  width: 220px;
+  display: flex;
+  border-radius: 10px;
+  flex: 1 1 220px;
+  height: 70px;
+  /* animation: anim 0.3s forwards; */
+  /* transform: translateY(-5%); */
+}
+.services-block-mobile:hover {
+  background: #242028;
+}
+
+/*_Иконка меню__________________________*/
+.menu-button {
+  cursor: pointer;
+  font-size: 1.2em;
+  background: #712dd4;
+  border: none;
+  color: white;
+  margin-bottom: auto;
+}
+
+/*_Стили для списка ссылок______________*/
+.dropdown-section-mobile {
+  height: 100vh;
+  display: none;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  margin-top: 30px;
+  margin-left: 0;
+  animation: anim 1s forwards;
+
+  /* Вот это добавлено */
+  overflow-y: auto;
+}
+
+/*_Кнопка для открытия списка___________*/
+.toggle-button {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  color: white;
+  padding: 20px;
+  transition: 0s;
+  /* outline: none; */
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/*_Стили для списка ссылок______________*/
+.link-list {
+  display: none; /* Скрываем по умолчанию */
+  justify-content: center;
+  align-items: center;
+}
+.link-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+/*_Неактивное бургер меню_______________*/
+.burger-checkbox {
+  display: none;
+}
+
+/*_Размеры кнопки меню__________________*/
+.burger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 26px;
+}
+
+/*_Незнаю_______________________________*/
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #ffffff;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+#check:checked ~ .dropdown-section-mobile {
+  display: block;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + .toggle-button + .link-list {
+  display: block;
+}
+.header_block_mobile .icon54 {
+  justify-content: center;
+  align-self: center;
+}
+.toggle-button
+.toggle-button:hover {
+  background: #242028;
+  border-radius: 10px;
+}
+
+/*_Изменение шапки на Мобильную версию__*/
+@media (max-width: 1080px) {
+  .header_block {
+    display: none;
+  }
+  .header_block_mobile {
+    display: block;
+    
+  }
+}
