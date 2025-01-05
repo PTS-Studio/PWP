@@ -1,13 +1,16 @@
 body {
     background: #08162b;
 }
+html {
+    height: 100%;
+}
 /* Блок работы и проекты */
 .works_block {
     width: 1280px;
+    height: 100%;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
     padding: 0 45px 0 45px;
 }
 .block {
@@ -175,6 +178,7 @@ body {
         display: none;
     }
     .block_left {
+        display: block;
         padding-bottom: 0;
         width: 100%;
         height: auto;
@@ -199,8 +203,8 @@ body {
         margin-bottom: 10px;
     }
     .works_block {
+        height: auto;
         padding: 0 20px 0 20px;
         display: block;
-        height: auto;
     }
 }
