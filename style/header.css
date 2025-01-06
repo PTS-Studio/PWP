@@ -327,7 +327,7 @@
   padding: 20px;
   transition: 0s;
   /* outline: none; */
-  justify-content: space-between;
+  justify-content: center;
   gap: 5px;
 }
 

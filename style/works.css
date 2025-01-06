@@ -21,7 +21,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 70px;
     width: 45%;
     height: 100vh;
@@ -100,7 +100,7 @@ html {
 /* Правый блок */
 .block_right {
     margin-top: 80px;
-    padding-top: 70px;
+    padding-top: 30px;
     width: 52%;
     height: 1000px;
 }
@@ -124,7 +124,7 @@ html {
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
-    gap: 50px;
+    gap: 20px;
     transition: 0.2s;
     z-index: 1;
 }
@@ -137,7 +137,7 @@ html {
 .text-h2p {
     color: #e2e8f0;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .text-pp {
     font-size: 14px;
@@ -164,13 +164,17 @@ html {
 }
 .date {
     width: 100px;
-    color: #94a3b8;
+    color: #64748b;
+    font-size: 12px;
 }
 .color-purple {
     font-size: 14px;
     color: aquamarine;
 }
 @media (max-width: 1080px) {
+    .services_block {
+        margin-top: 32px;
+    }
     .block_fixed {
         position:static;
     }
