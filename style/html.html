@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="div">
+
+            <style type="text/css">
+                body {
+                    background: rgb(8, 22, 43);
+                    /* background: rgb(14, 35, 66); */
+                    width: 100vh;
+                    height: 100vh;
+                }
+
+            </style>
+            <script>
+            document.addEventListener('mousemove', e => {
+                const x = e.pageX - e.target.offsetLeft
+                const y = e.pageY - e.target.offsetTop
+                document.body.style.background = `radial-gradient(circle at ${x}px ${y}px, rgb(8, 22, 40), rgb(14, 35, 66))`;
+            });
+            </script>
+        </style>
+        </div>
+    </body>
+</html>
