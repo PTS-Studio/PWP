@@ -205,7 +205,7 @@
   color: white;
   padding: 20px;
   transition: 0s;
-  /* outline: none; */
+  outline: none;
   justify-content: center;
   gap: 5px;
 }
