@@ -98,7 +98,7 @@ body {
     justify-content: space-between;
 }
 .block-left3 {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .block-right3 {
@@ -119,6 +119,7 @@ body {
     width: 100%;
     height: auto;
     font-size: 32px;
+    border-radius: 0 5px 5px 0;
     color: rgb(50, 128, 50);
     border-left: 5px solid rgb(50, 128, 50);
     background: rgba(87, 147, 87, 0.247);
@@ -250,7 +251,7 @@ body {
 }
 .toggler {
     margin-bottom: 10px;
-    background: #13233b;
+    background: #2b364e;
     border-radius: 10px;
     z-index: 1;
 }
@@ -259,6 +260,10 @@ body {
     border-radius: 10px;
     padding: 20px;
     background: #0a1b34;
+    transition: 0.2s;
+}
+.toggler__label:hover {
+    background: #0b2141
 }
 .toggler__content-box  {
     margin-top: 16px;
@@ -282,6 +287,20 @@ body {
     opacity: 1;
 
     font-size: 1em;
+}
+.footer_block {
+    width: 100%;
+    height: auto;
+    background: #13233b;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.abbreviature {
+    width: 1280px;
+    height: auto;
+    margin: 0 150px 0 150px;
 }
 @media (max-width: 1080px) {
     .titul_block {
@@ -330,7 +349,13 @@ body {
         padding: 130px 0 0 0;
     }
     .about_block {
-        padding: 0 0 20px 0;
+        padding: 45px 0 40px 0;
+    }
+    .skils_block {
+        padding: 0 0 40px 0;
+    }
+    .contacts_block {
+        padding: 40px 0 40px 0;
     }
 }
 @media (max-width: 1080px) {
@@ -349,5 +374,8 @@ body {
     .skill_card_bottom .block_bottom {
         width: 100%;
         margin-top: 20px;
+    }
+    .abbreviature {
+        margin: 0 25px 0 25px;
     }
 }

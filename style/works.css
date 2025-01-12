@@ -90,6 +90,11 @@ html {
 }
 .services_block {
     width: 100%;
+    border-left: 5px solid red;
+    background: rgba(255, 0, 0, 0.148);
+    border-radius: 0 5px 5px 0;
+    padding-left: 20px;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -135,7 +140,7 @@ html {
 }
 .card:hover {
     background: #12223e;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 5px 8px rgb(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -164,8 +169,8 @@ html {
 }
 .tech {
     padding: 5px 20px 5px 20px;
-    background: rgba(127, 255, 212, 0.078);
-    border-radius: 60px;
+    background: rgba(87, 147, 87, 0.247);
+    border-radius: 5px;
 }
 .date {
     width: 100px;
@@ -174,10 +179,11 @@ html {
 }
 .color-purple {
     font-size: 14px;
-    color: aquamarine;
+    color: rgb(75, 195, 75);
 }
 @media (max-width: 1080px) {
     .services_block {
+        width: 100%;
         margin-top: 32px;
     }
     .block_fixed {
@@ -193,9 +199,10 @@ html {
         height: auto;
     }
     .text-h1 {
-        width: auto;
-        font-size: 8vw;
-        line-height: 10vw;
+        font-size: 7vw;
+    }
+    .text-h2 {
+        font-size: 7vw;
     }
     .text-p {
         width: 100%;
